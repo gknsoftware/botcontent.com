@@ -1,0 +1,101 @@
+/*############################################################
+#
+#	## CONTROLLER: bot.php
+#
+############################################################*/
+
+/* 0. HTML STANDART */
+a,a:hover{
+	transition: all 0.5s ease;
+}
+
+/* 1. FORM STANDART */
+.inline-form{
+	float: left;
+	margin-right: 1em;
+}
+
+/* 2. LIST CONTENT */
+.list-content{
+	width: 100%;
+	min-width: 100%;
+	display: inline-block;
+	box-shadow: 0px 0px 25px -8px rgba(0,0,0,0.46);
+	-webkit-box-shadow: 0px 0px 25px -8px rgba(0,0,0,0.46);
+	-moz-box-shadow: 0px 0px 25px -8px rgba(0,0,0,0.46);
+	-ms-box-shadow: 0px 0px 25px -8px rgba(0,0,0,0.46);
+	-o-box-shadow: 0px 0px 25px -8px rgba(0,0,0,0.46);
+	background-color: #fff;
+	padding: 1em;
+	margin: 1em 0;
+}
+
+	/* 2.1 Thumbail */
+	.list-content > .thumbnail{
+		margin-right: 1em;
+	}
+
+	/* 2.2 Article */
+	.list-content > .article p{
+		padding-top: .6em;
+		color: #999;
+	}
+	.list-content > .article a{
+		display: block;
+		text-decoration: none;
+		color: #666;
+	}
+	.list-content > .article a:hover{
+		color: #000;
+	}
+
+/* TAB: EDIT */
+#addContent fieldset legend{
+	color: #959595;
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding-bottom: 15px;
+}
+#addContent fieldset small{
+	font-size: smaller;
+}
+#addContent .form-group label{
+	
+}
+
+/* TAB: PUBLISH */
+#publish .form-group{
+	padding-bottom: 1em;
+	display: inline-block;
+	width: 100%;
+}
+#publish .form-group label{
+	display: block;
+}
+#publish small{
+	font-size: smaller;
+}
+#publish .clearfix{
+	padding: .5em 0;
+}
+
+/* TAB: PREVIEW */
+.previewMenu{
+	list-style: none;
+	float: right;
+}
+.previewMenu li{
+	display: inline-block;
+}
+
+.previewContent{
+	width: 100%;
+	display: inline-block;
+	line-height: 1.6em;
+}
+.previewContent h1{
+	font-size: 1.6em;
+	font-weight: bold;
+	margin-bottom: 1em;
+}

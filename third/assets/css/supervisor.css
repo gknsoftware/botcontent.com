@@ -1,0 +1,63 @@
+/*############################################################
+#
+#	## CONTROLLER: supervisor.php
+#
+#	LAYOUT: RIGHT COLUMN
+#
+############################################################*/
+/*	VIEW: view_customers.php;
+--------------------------------------------------*/
+.company-logo img{
+	height: 50px;
+	display: none;
+	margin: 0 auto;
+}
+.company-name a{
+	color: #9954bb;
+	font-weight: bold;
+	text-decoration: none !important;
+}
+.edit-panel{
+	margin-top: 20px;
+}
+
+/*############################################################
+#
+#	MODALBOX
+#
+############################################################*/
+/*	MODAL: business card
+--------------------------------------------------*/
+.businessCard{
+	width: 100%;
+	display: inline-block;
+	position: relative;
+	z-index: 99;
+}
+.businessCard p{
+	margin: 15px 0;
+}
+.businessCard div{
+	text-align: center;
+}
+.businessCard ul li{
+	list-style: none;
+	margin-bottom: 20px;
+	margin-left: 15px;
+}
+.businessCardBg{
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	position: absolute;
+	z-index: 11;
+	left: 0;
+	top: 0;
+	opacity: 0.3;
+    filter: alpha(opacity=30); /* For IE8 and earlier */
+	background: url(../images/map_world.png) no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}

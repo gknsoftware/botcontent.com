@@ -1,0 +1,400 @@
+@edi/* Fonts Imported from Google */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600,400);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,900);
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
+/*	HTML standart stiller
+--------------------------------------------------*/
+html{height: 100%;}
+body{
+	height:100%;
+	padding-top:5%;
+	font-family: 'Open Sans' !important;
+	background: #1f3649;
+	color: #fff;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+#form-signin input:focus, #form-signup input:focus, #form-forgotpwd input:focus, #form-confirmCode input:focus{
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	border-color: #C8C7BD;
+}
+
+/*	Arkaplan ve arkaplan filtre
+--------------------------------------------------*/
+#backgrounds{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: -moz-radial-gradient(center, ellipse cover, #1f3649 0%, #17253d 44%, #040d11 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #1f3649), color-stop(44%, #17253d), color-stop(100%, #040d11));
+	background: -webkit-radial-gradient(center, ellipse cover, #1f3649 0%, #17253d 44%, #040d11 100%);
+	background: -o-radial-gradient(center, ellipse cover, #1f3649 0%, #17253d 44%, #040d11 100%);
+	background: -ms-radial-gradient(center, ellipse cover, #1f3649 0%, #17253d 44%, #040d11 100%);
+	background: radial-gradient(ellipse at center, #1f3649 0%, #17253d 44%, #040d11 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@account-color-dark', endColorstr='#040d11', GradientType=1);
+	background-position: left top !important;,
+	background-repeat: no-repeat !important;
+	-webkit-background-size: cover !important;
+	-moz-background-size: cover !important;
+	-o-background-size: cover !important;
+	background-size: cover !important;
+	z-index: -2;
+}
+
+#bgfilter{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: rgba(15, 15, 15, 0.5);
+	z-index: -1;
+}
+
+.icon-user{
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+/*	FORM: Bilgileri doğrulama
+--------------------------------------------------*/
+.hideResult{
+	display: none;
+}
+.has-error .glyphicon{
+	color: #a94442;
+}
+
+/*	GİRİŞ: Bilgi alanı (sol)
+--------------------------------------------------*/
+.account-info{
+	background-color: #D92332;
+	padding: 25px;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 35px;
+}
+.account-info small{
+	font-weight: 100;
+	font-size: 17px;
+}
+.account-info h1{
+	font-size: 25px;
+	font-weight: bold;
+	font-family: 'Lato', arial, sans-serif;
+}
+.account-info ul{
+	margin-top: 10%;
+}
+.account-info ul li{
+	display: block;
+	list-style: none;
+	font-size: 15px;
+}
+.account-info ul li a{
+	color: #fff;
+	text-decoration: none;
+}
+
+/* mobil dışındakilere account-info gizle */
+.showinfo{display: none !important;}
+
+/*	GİRİŞ: Form alanı (sağ)
+--------------------------------------------------*/
+.account-form{
+	background-color: #fff;
+	color: #999;
+	font-family: 'Lato', sans-serif;
+	padding: 25px;
+	border-bottom: 1px solid #ddd;
+}
+.account-form h3{
+	font-weight: 100;
+	font-size: 17px;
+	color: #5B5B56;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+/*	Form ikonları pozisyonları
+--------------------------------------------------*/
+.inner-addon { 
+    position: relative;
+    margin-bottom: 10px;
+    color: #C8C7BD;
+}
+
+/* style icon */
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 15px;
+  pointer-events: none;
+}
+
+/* align icon */
+.left-addon .glyphicon  {left:  0px;}
+.right-addon .glyphicon {right: 0px;}
+
+/* add padding  */
+.left-addon input  {padding-left:  30px;}
+.right-addon input {padding-right: 30px;}
+
+.form-control{
+	border: 1px solid #ECEDEE;
+	border-radius: 0;
+	color: #5B5B56;
+}
+
+.forgotpassword a{
+	color: #A7A7A7;
+	font-size: 14px;
+}
+
+.forgotpassword a:hover{
+	color: #5B5B56;
+	text-decoration: none;
+}
+
+/*	Sosyal medya ile giriş
+--------------------------------------------------*/
+.hrSocial{
+	width: 100%;
+	height: 1px;
+	clear: both;
+	display: inline-block;
+	margin-top: 25px;
+	margin-bottom: 10px;
+	background-color: #ECEDEE;
+}
+.hrOr{
+	width: 60px;
+	padding: 8px 16px; 
+	background-color: #ECEDEE; 
+	display: inline-block; 
+	color: #666;
+	position: relative; 
+	bottom: 28px; 
+	left: 50%; 
+	font-size: 14px;
+	text-align: center;
+}
+
+.social-login{
+	color: #333;
+	margin-top: 15px;
+}
+
+.btn{
+	text-align: left;
+	line-height: 14px;
+	-webkit-font-smoothing: subpixel-antialiased;
+	-webkit-transition: border 0.25s linear, color 0.25s linear, background-color 0.25s linear;
+	transition: border 0.25s linear, color 0.25s linear, background-color 0.25s linear;
+}
+
+.btn i{padding-right: 10px;}
+
+.btn.btn-fb{background-color: #3a548b; color: #fff;}
+.btn.btn-fb:hover{background-color: #2C3F69; color: #fff;}
+
+.btn.btn-tt{background-color: #00a2d9; color: #fff;}
+.btn.btn-tt:hover{background-color: #0081AD; color: #fff;}
+
+.btn.btn-square{
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	font-size: 14px;
+}
+
+.signup{
+	margin-top: 25px;
+}
+.signup a{
+	color: #A7A7A7;
+	font-size: 14px;
+}
+.signup a:hover{
+	color: #5B5B56;
+	text-decoration: none;
+}
+
+/*	Yeni hesap oluşturma sayfası (view_register.php)
+--------------------------------------------------*/
+.col-xs-6{
+	padding-left: 0;
+	padding-right: 5px;
+}
+
+/* align icon */
+.left-addon-2 .glyphicon  {left:  0px;}
+.right-addon-2 .glyphicon {right: 5px;}
+
+/* checkbox agreement */
+label.agreement{
+	font-size: 13px;
+	line-height: 20px;
+	font-weight: bold;
+}
+
+/* verification code */
+.newverifycode{
+	color: #A7A7A7;
+	font-size: 12px;
+	text-transform: uppercase;
+	margin-bottom: 25px;
+}
+.newverifycode a{
+	color: #A7A7A7;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+.newverifycode a:hover{
+	color: #5B5B56;
+}
+.newverifycode a:hover, a:link, a:active{
+	text-decoration: none;
+}
+.newverifycode div{
+	margin-left: 10px;
+	display: inline-block;
+}
+.newverifycode span{
+	display: inline-block;
+}
+
+/*	Şifremi unuttum sayfası (view_forgotpwd.php)
+--------------------------------------------------*/
+.center-block{text-align: center;}
+
+.center-block ul{list-style: none;}
+.center-block ul li{display: inline-block;}
+.center-block ul li i{margin: 0 5px; position: relative; top: 4px;}
+
+.m-t-50{margin-top: 50px;}
+.btn-resetpwd{width: 100%; text-align: center; height: 35px}
+
+.nosuchemail{font-size: 12px; color: #ff0039; margin-top: 5px; margin-bottom: 30px;}
+.sendsuccess{text-align: center;}
+.sendsuccess i{font-size: 64px; margin-bottom: 35px; color: #333;}
+.sendsuccess span{font-size: 18px;}
+
+/*	Aynı yükseklikteki sütunlar&responsive
+--------------------------------------------------*/
+.row-full-height {
+  height: 100%;
+}
+.col-full-height {
+	height: 100%;
+	vertical-align: middle;
+}
+.row-same-height {
+	display: table;
+	width: 100%;
+	/* fix overflow */
+	table-layout: fixed;
+}
+.col-xs-height {
+	display: table-cell;
+	float: none !important;
+}
+
+@media (min-width: 768px) {
+	.col-sm-height {
+		display: table-cell;
+		float: none !important;
+	}
+	.hrOr{
+		width: 60px;
+		margin: 0 -30px;
+	}
+}
+@media (min-width: 992px) {
+	.col-md-height {
+		display: table-cell;
+		float: none !important;
+	}
+	.hrOr{
+		width: 60px !important;
+		margin: 0 -30px;
+	}
+	.account-info ul{
+		display: block !important;
+	}
+}
+@media (max-width: 992px) {
+	.account-form{
+		padding-bottom: 60px;
+	}
+	.account-info{
+		display: none;
+	}
+	.account-info ul{
+		display: none;
+	}
+	.btn-showinfo{
+		display: inline-block !important;
+	}
+	.showinfo{
+		cursor: pointer; 
+		display: block !important;
+	}
+	.hrOr{
+		width: 60px !important;
+		margin: 0 -30px;
+	}
+}
+@media (min-width: 1200px) {
+	.col-lg-height {
+		display: table-cell;
+		float: none !important;
+	}
+	.hrOr{
+		width: 85px !important;
+		margin: 0 -42px;
+	}
+}
+
+/*	Animasyon (Renkli buton vs.)
+--------------------------------------------------*/
+.text-animate,.btn-animate{
+    
+    -webkit-animation: CAnimation 30s infinite linear; /* Chrome, Safari, Opera */
+    animation: CAnimation 30s infinite linear;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes CAnimation {
+    from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+
+/* Standard syntax */
+@keyframes CAnimation {
+    from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+
+/*	Box shadow
+--------------------------------------------------*/
+.box-shadow{
+	-webkit-box-shadow: -1px 0px 31px -1px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 0px 31px -1px rgba(0,0,0,0.75);
+	-ms-box-shadow: -1px 0px 31px -1px rgba(0,0,0,0.75);
+	-o-box-shadow: -1px 0px 31px -1px rgba(0,0,0,0.75);
+	box-shadow: -1px 0px 31px -1px rgba(0,0,0,0.75);
+}

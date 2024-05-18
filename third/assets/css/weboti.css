@@ -1,0 +1,463 @@
+@edi/* Fonts Imported from Google */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600,400);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,900);
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700);
+/*	HTML STANDART STYLES
+--------------------------------------------------*/
+html, body{
+	height: auto;
+	max-width: 100%;
+}
+body {
+	font-family: 'Titillium Web', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+label{
+	margin-bottom: 5px !important;
+}
+textarea{
+	resize: vertical;
+}
+div[data-toggle]{cursor: move;}
+div[data-toggle] i{cursor: pointer;}
+/*	UTILITIES
+--------------------------------------------------*/
+.no-border{
+	border: none !important;
+}
+.no-padding{
+	padding: 0 !important;
+}
+.no-padding-top{
+	padding-top: 0 !important;
+}
+.no-padding-bottom{
+	padding-bottom: 0 !important;
+}
+.no-padding-left{
+	padding-left: 0 !important;
+}
+.no-padding-right{
+	padding-right: 0 !important;
+}
+.inline-element{
+	width: 50% !important;
+	float: left;
+	padding-right: 10px;
+}
+/*	BOOTSTRAP DEFAULTS
+--------------------------------------------------*/
+.droparea{
+	min-height: 50px;
+}
+.modal-backdrop.in{
+	opacity:.9;
+	filter:alpha(opacity=90);
+}
+.label{
+	display: inline-block !important;
+	padding: .5em .6em .5em !important;
+}
+.modal-title{
+	text-transform: uppercase;
+}
+.vertical-middle td, th{
+    vertical-align: middle !important;
+}
+.portlet-header{
+	cursor: move !important;
+}
+.portlet-toggle {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	margin-top: -8px;
+}
+.portlet-placeholder {
+	border: 1px dotted black;
+	margin: 0 1em 1em 0;
+	height: 50px;
+}
+.row-slide{
+	display: none;
+}
+/*	Form ikonları pozisyonları
+--------------------------------------------------*/
+.inner-addon { 
+    position: relative;
+    margin-bottom: 10px;
+    color: #C8C7BD;
+}
+
+/* style icon */
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 15px;
+  pointer-events: none;
+}
+
+/* align icon */
+.left-addon .glyphicon  {left:  0px;}
+.right-addon .glyphicon {right: 0px;}
+
+/* add padding  */
+.left-addon input  {padding-left:  30px;}
+.right-addon input {padding-right: 30px;}
+
+.form-control{
+	border: 1px solid #ECEDEE;
+	border-radius: 0;
+	color: #5B5B56;
+}
+/*	Icon near textbox
+--------------------------------------------------*/
+.input-group.input-group-unstyled input.form-control {
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+.input-group-unstyled .input-group-addon {
+	border-radius: 4px;
+	border: 0px;
+	background-color: transparent;
+}
+.input-group-colored .input-group-addon {
+	border-radius: 4px;
+	border: 0px;
+	background-color: #2780E3;
+	color: #fff;
+}
+
+/*############################################################
+#
+#	LAYOUT: HEADER
+#
+############################################################*/
+/*	NAVBAR MAIN
+--------------------------------------------------*/
+.navbar{
+	margin: 0;
+	padding: 0;
+	z-index: 99;
+}
+.navbar-main ul li i{
+	float: left;
+	margin-right: 5px;
+	margin-top: 3px;
+}
+.navbar-main ul li.dropdown i{
+	float: inherit !important;
+	margin-right: 0 !important;
+	margin-top: 0 !important;
+}
+.navbar-main ul li .img-thumbnail{
+	padding: 1px; 
+	position: relative;
+	bottom: 7px; 
+	margin-right: 6px;
+}
+
+/* dropdown: user detail */
+.dropdown-userdetail img{
+	padding: 15px; 
+	margin: 0 40px;
+}
+.dropdown-userdetail li a:before{
+	float: right;
+}
+.dropdown-userdetail .welcome_user{
+	color: #333; 
+	font-weight: bold; 
+	text-align: center; 
+	line-height: 18px; 
+	margin-bottom: 10px;
+}
+.dropdown-userdetail .welcome_user small{
+	font-size: 12px; 
+	font-weight: normal;
+}
+.dropdown-userdetail .welcome_user small:before{	
+	float: right; 
+	margin-left: 5px;
+}
+
+/*############################################################
+#
+#	LAYOUT: LEFT COLUMN
+#
+############################################################*/
+.left-column{
+	border-right: 1px solid #eee; 
+	padding: 0; 
+	position: fixed; 
+	left: 0; 
+	bottom: 0; 
+	top: 52px;
+}
+
+/*	BLOCK: PROFILE;
+--------------------------------------------------*/
+.profile{
+	border-bottom: 1px solid #eee; 
+	padding: 25px 17px;
+}
+.profile img{
+	border-radius: 6px;
+}
+.profile h1{
+	font-size: 18px;
+}
+.profile div{
+	padding: 0 15px;
+}
+.profile div ul{
+	list-style: none; 
+	margin: 10px 0; 
+	padding: 0;
+}
+.profile div ul li{
+	display: inline-block;
+}
+
+.profile div ul li a.ico-ticket{
+	border: 1px solid #e8e8e8; 
+	display: inline-block; 
+	color: #8b9298; 
+	font-size: 12px; 
+	padding: 4px 6px;
+}
+.profile div ul li a.ico-ticket:hover{
+	background-color: #FFB234; 
+	color: #fff;
+}
+
+.profile div ul li a.ico-profile{
+	border: 1px solid #e8e8e8; 
+	display: inline-block; 
+	color: #8b9298; 
+	font-size: 12px; 
+	padding: 4px 6px;
+}
+.profile div ul li a.ico-profile:hover{
+	background-color: #FFB234; 
+	color: #fff;
+}
+
+.profile div ul li a.ico-logout{
+	border: 1px solid #e8e8e8; 
+	display: inline-block; 
+	color: #8b9298; 
+	font-size: 12px; 
+	padding: 4px 6px;
+}
+.profile div ul li a.ico-logout:hover{
+	background-color: red; color: #fff;
+}
+
+/*	BLOCK: LEFT MENU;
+--------------------------------------------------*/
+.left-menu{
+	list-style: none; 
+	padding: 25px 0;
+}
+.left-menu li{
+	margin-bottom: 10px;
+}
+.left-menu li a{
+	display: block; 
+	padding: 14px 25px; 
+	color: #8b9298; 
+	transition: color 0.2s ease;
+}
+.left-menu li a:hover{
+	text-decoration: none; 
+	color: #444; 
+	background-color: transparent;
+}
+.left-menu li a:visited, .left-menu li a:link, .left-menu li a:active{
+	background-color: transparent;
+}
+.left-menu li a.active{
+	background-color: #f6f6f6; 
+	color: #444;
+}
+.left-menu li ul{
+	display: none;
+}
+.left-menu li:first-child ul{
+	display: block;
+}
+.left-menu li label{
+	padding-left: 17px;
+}
+.left-menu li li a{
+	padding-left: 42px;
+}
+
+/* dropdown menu */
+.nav-header{
+	font-size: 14px; 
+	margin-bottom: 5px; 
+	cursor: pointer;
+}
+.nav-header i{
+	margin-right: 6px;
+}
+.nav-list-margin{
+	margin-bottom: 10px;
+}
+
+/*############################################################
+#
+#	LAYOUT: RIGHT COLUMN
+#
+############################################################*/
+.right-column{
+	padding: 25px;
+}
+.page-title{
+	font-size: 2em;
+	font-weight: bold;
+}
+
+/*############################################################
+#
+#	MODALBOX
+#
+############################################################*/
+/*	MODAL: select language
+--------------------------------------------------*/
+.select-language li{
+	list-style: none;
+	display: inline-block;
+	margin-right: 25px;
+}
+.select-language li a{
+	color: #444;
+	text-decoration: none;
+}
+.select-language li a:hover{
+	text-decoration: none;
+	font-weight: bold;
+}
+.select-language li.active{
+	background-color: #f9f9f9;
+	padding: 15px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: inset 0px 0px 6px 1px rgba(207,207,207,1);
+	-moz-box-shadow: inset 0px 0px 6px 1px rgba(207,207,207,1);
+	box-shadow: inset 0px 0px 6px 1px rgba(207,207,207,1);
+
+}
+.select-language li span{
+	display: block;
+	text-align: center;
+	font-size: 0.8em;
+	text-transform: uppercase;
+}
+.select-language li.active span{
+	font-weight: bold;
+}
+
+/*	MODAL: settings
+--------------------------------------------------*/
+#settingsModal .tab-content{
+	width: 100%;
+	padding-top: 1.5em;
+	display:inline-block;
+}
+#settingsModal .tab-content small{
+	font-size: smaller;
+}
+
+/* TAB: GENERAL */
+#tab-general .form-group{
+	margin-bottom: 2.4em !important;
+}
+
+/* TAB: BOT */
+#tab-bot .form-group{
+	margin-bottom: 2.4em !important;
+}
+
+/*	MODAL: defaults
+--------------------------------------------------*/
+#defaultsModal .tab-content{
+	width: 100%;
+	padding-top: 1.5em;
+	display:inline-block;
+}
+
+/*############################################################
+#
+#	PLUGINS
+#
+############################################################*/
+/*	JS: nediim notifications
+--------------------------------------------------*/
+div.activity {
+	margin-left: 28px;
+}
+div.activity span {
+	display: block;
+	color: #999;
+	font-size: 11px;
+	line-height: 16px;
+}
+
+div.activity-item {
+	padding: 7px 12px;
+}
+.activity-item i {
+	float: left;
+	margin-top: 3px;
+	font-size: 16px;
+}
+.activity-item a {
+	color: #428bca;
+	text-decoration: none;
+}
+.activity-item a:hover {
+	color: #D65C4F;
+	text-decoration: none;
+}
+
+#notification-list div.activity-item {
+	border-top: 1px solid #f5f5f5;
+}
+#notification-list div.activity-item a {
+	font-weight: 600;
+}
+
+#notifications i.fa {
+	font-size: 17px;
+}
+
+.noty_type_error * {
+	font-weight: normal !important;
+}
+.noty_type_error a {
+	font-weight: bold !important;
+}
+.noty_type_error div.activity span
+{
+	color: #fff
+}
+
+.noty_bar.noty_type_error a, .noty_bar.noty_type_error i {
+	color: #fff
+}
+.noty_bar.noty_type_information a {
+	color: #fff;
+	font-weight: bold;
+}
+
+.noty_type_information div.activity span
+{
+	color: #fefefe
+}

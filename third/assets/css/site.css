@@ -1,0 +1,209 @@
+/*############################################################
+#
+#	## CONTROLLER: site.php
+#
+############################################################*/
+/*	HTML STANDART STYLES
+--------------------------------------------------*/
+fieldset{
+	margin-bottom: 25px;
+}
+legend{
+	font-size: 1em;
+	font-weight: bold;
+	border-bottom: 1px solid #444;
+	margin-bottom: 15px;
+	padding-bottom: 5px;
+}
+a{
+	text-decoration: none !important;
+}
+
+/*	BOOTSTRAP STANDART STYLES
+--------------------------------------------------*/
+.form-horizontal .form-group{
+	margin: 0 !important;
+}
+
+/*	page: view/templates.php
+--------------------------------------------------*/
+.tpl-grid p{
+	font-size: 16px;
+}
+.tpl-grid p a.btn{
+	margin-top: 10px; 
+	-webkit-border-radius: 5px; 
+	-moz-border-radius: 5px; 
+	border-radius: 5px;
+}
+
+/*	page: view/support.php
+--------------------------------------------------*/
+/* support-documents */
+.support-documents{
+	list-style: none;
+}
+.support-documents li{
+	margin-bottom: 5px;
+	position: relative;
+}
+.support-documents li:hover{
+	background-color: #F5F5F5;
+}
+.support-documents li a{
+	display: block;
+	padding: 25px 0 25px 85px;
+	color: #444;
+}
+.support-documents li a:hover{
+	text-decoration: none;
+	color: #2C83E0;
+}
+.support-documents li i{
+	position: absolute;
+	top: 10px;
+	left: 20px;
+}
+/* ticket-current-user */
+.ticket-current-user{
+	width: 100%;
+	display: inline-block;
+	margin-bottom: 15px;
+	padding: 10px;
+}
+.ticket-current-user p:first-child{
+	font-weight: 500;
+}
+/* ticket-department */
+.ticket-department li{
+	list-style: none;
+	padding: 25px;
+	background-color: #f5f5f5;
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+.ticket-department li i{
+	padding-right: 5px;
+}
+/* response-list */
+.response-list{
+	list-style: none;
+}
+.response-list li{
+	margin-bottom: 25px;
+	padding-bottom: 25px;
+	border-bottom: 1px solid #eee;
+}
+.response-list li:last-child{
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+.response-list li h3.author{
+	padding: 0px;
+	margin-bottom: 10px;
+	font-weight: 600;
+}
+.response-list li span.response{
+	display: block;
+	margin-left: 10px;
+	color: #888;
+	line-height: 1.5em;
+}
+/* faq-category */
+.faq-category{
+	list-style: none;
+	margin: 10px 25px;
+}
+.faq-category li{
+	margin-bottom: 10px;
+	color: #2780e3;
+}
+.faq-category li a{
+	color: #444;
+}
+.faq-category li a:hover{
+	color: #2780e3;
+}
+
+/*	page: view/faq.php
+--------------------------------------------------*/
+.faq-header{
+	background-color: #00BD55;
+	padding: 50px 25px;,
+}
+.faq-header h1{
+	font-size: 2em;
+	color: #fff;
+	font-weight: 400;
+	margin-bottom: 5px;
+}
+.faq-breadcrumb li{
+	list-style: none;
+	display: inline-block;
+	color: #fff;
+	font-weight: bold;
+}
+.faq-breadcrumb li:before{
+	font-family: 'FontAwesome';
+	content: "\f105";
+	color: #D9EDD8;
+	padding: 0 6px;
+}
+.faq-breadcrumb li:first-child:before{
+	content: "";
+	padding: 0;
+	margin: 0;
+}
+.faq-breadcrumb li a{
+	color: #fff;
+	font-weight: normal;
+}
+.faq-breadcrumb li a:hover{
+	text-decoration: underline !important;
+}
+/* faq-sidebar */
+.faq-sidebar{
+	margin: 0;
+	padding: 0;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+}
+.faq-sidebar ul li{
+	padding: 0 25px;
+	list-style: none;
+	border-bottom: 1px solid #eee;
+}
+.faq-sidebar ul li:last-child{
+	border: none;
+}
+.faq-sidebar ul li:hover{
+	background-color: #FFF9E5;
+}
+.faq-sidebar ul li.active{
+	border-left: 4px solid #F3CF5D;
+	background-color: #FFF9E5;
+}
+.faq-sidebar ul li a{
+	display: block;
+	padding: 15px 0;
+	color: #444;
+}
+/* faq-content */
+.faq-content{
+	line-height: 1.6em;
+	padding-right: 50px;
+}
+.faq-content h1{
+	font-size: 1.6em;
+	font-weight: 400;
+	margin-bottom: 15px;
+}
+/* faq-cat-name */
+.faq-categoryList{
+	padding: 5% 2%;
+	background-color: #f9f9f9;
+	cursor: pointer;
+}

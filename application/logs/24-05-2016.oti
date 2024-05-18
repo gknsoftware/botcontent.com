@@ -1,0 +1,23 @@
+[2016-05-24 - 15:32 pm] => E-Posta Gönderim Hatası => 220 isimtescil.net Mail Server 2
+<br /><pre>hello: 250-isimtescil.net [78.135.89.33], this server offers 6 extensions
+250-AUTH LOGIN
+250-SIZE 20971520
+250-HELP
+250-AUTH=LOGIN
+250-XSAVETOSENT
+250 X-SAVETOSENT
+</pre>lang:email_smtp_auth_pw<br />lang:email_send_failure_smtp<br /><pre>User-Agent: CodeIgniter
+Date: Tue, 24 May 2016 15:32:50 +0300
+To: asdasd@mail.com
+From: &quot;Weboti&quot; &lt;no-reply@weboti.com&gt;
+Return-Path: &lt;no-reply@weboti.com&gt;
+Subject: =?utf-8?Q?=48=65=73=61=70=20=44=6F=C4=9F=72=75=6C=61=6D=61=20=4B=6F=64=75?= =?utf-8?Q?=2E?=
+Reply-To: &quot;no-reply@weboti.com&quot; &lt;no-reply@weboti.com&gt;
+X-Sender: no-reply@weboti.com
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;574449f27c1aa@weboti.com&gt;
+Mime-Version: 1.0
+
+
+</pre>

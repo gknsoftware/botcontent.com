@@ -1,0 +1,31 @@
+[2015-07-02 - 08:55 am] => E-Posta Gönderim Hatası => 220-tr3.megatrhost.com ESMTP Exim 4.85 #2 Thu, 02 Jul 2015 08:55:39 +0300 
+220-We do not authorize the use of this system to transport unsolicited, 
+220 and/or bulk e-mail.
+<br /><pre>hello: 250-tr3.megatrhost.com Hello localhost [212.156.67.62]
+250-SIZE 52428800
+250-8BITMIME
+250-PIPELINING
+250-AUTH PLAIN LOGIN
+250-STARTTLS
+250 HELP
+</pre><pre>from: 250 OK
+</pre><pre>to: 501 <asdasdad.asdsad>: recipient address must contain a domain
+</pre>lang:email_smtp_error<br /><pre>data: 503-All RCPT commands were rejected with this error:
+503-501 <asdasdad.asdsad>: recipient address must contain a domain
+503 Valid RCPT command must precede DATA
+</pre>lang:email_smtp_error<br />500 unrecognized command
+<br />lang:email_smtp_error<br />lang:email_send_failure_smtp<br /><pre>User-Agent: CodeIgniter
+Date: Thu, 2 Jul 2015 08:55:15 +0300
+To: asdasdad.asdsad
+From: &quot;Weboti&quot; &lt;no-reply@weboti.com&gt;
+Return-Path: &lt;no-reply@weboti.com&gt;
+Subject: =?utf-8?Q?=48=65=73=61=70=20=44=6F=C4=9F=72=75=6C=61=6D=61=20=4B=6F=64=75?= =?utf-8?Q?=2E?=
+Reply-To: &quot;no-reply@weboti.com&quot; &lt;no-reply@weboti.com&gt;
+X-Sender: no-reply@weboti.com
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;5594d2438b1f7@weboti.com&gt;
+Mime-Version: 1.0
+
+
+</pre>
